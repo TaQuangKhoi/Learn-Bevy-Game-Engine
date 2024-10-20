@@ -12,3 +12,12 @@ struct Position {
     x: f32,
     y: f32,
 }
+
+/**
+ * Systems: normal Rust functions
+ */
+fn print_position_system(query: Query<&Position>) {
+    for position in &query {
+        println!("position: {} {}", position.x, position.y);
+    }
+}
