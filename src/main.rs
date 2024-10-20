@@ -21,3 +21,6 @@ fn print_position_system(query: Query<&Position>) {
         println!("position: {} {}", position.x, position.y);
     }
 }
+
+// Entities: a simple type containing a unique integer
+struct Entity(u64);
