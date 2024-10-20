@@ -1,8 +1,16 @@
 use bevy::prelude::*;
 
 fn main() {
-    App::new().run();
+    App::new()
+        .add_systems(Update, hello_world)
+        .run();
 }
+
+// System
+fn hello_world() {
+    println!("hello world!");
+}
+
 
 /**
  * Components: Rust structs that implement the Component trait
